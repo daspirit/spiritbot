@@ -1,0 +1,82 @@
+﻿USE [SpiritDB]
+GO
+
+/****** Object: Table [dbo].[CommandExecuted] Script Date: 1/17/2018 10:54:14 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[CommandExecuted] (
+    [Id]                INT                IDENTITY (1, 1) NOT NULL,
+    [Author]            NVARCHAR (250)     NULL,
+    [Content]           NVARCHAR (MAX)     NULL,
+    [ChannelID]         NVARCHAR (250)     NULL,
+    [Channel]           NVARCHAR (250)     NULL,
+    [CreationTimeStamp] DATETIMEOFFSET (7) NULL
+);
+
+
+/*
+USE [SpiritDB]
+GO
+
+/****** Object: Table [dbo].[Message] Script Date: 1/17/2018 10:54:10 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Message] (
+    [Id]                INT                IDENTITY (1, 1) NOT NULL,
+    [Author]            NVARCHAR (250)     NULL,
+    [Content]           NVARCHAR (MAX)     NULL,
+    [ChannelID]         NVARCHAR (250)     NULL,
+    [Channel]           NVARCHAR (250)     NULL,
+    [CreationTimeStamp] DATETIMEOFFSET (7) NULL
+);
+
+
+USE [SpiritDB]
+GO
+
+/****** Object: Table [dbo].[QuoteMessages] Script Date: 1/17/2018 10:54:05 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[QuoteMessages] (
+    [Id]                INT                IDENTITY (1, 1) NOT NULL,
+    [Author]            NVARCHAR (250)     NULL,
+    [Content]           NVARCHAR (MAX)     NULL,
+    [ChannelID]         NVARCHAR (250)     NULL,
+    [Channel]           NVARCHAR (250)     NULL,
+    [CreationTimeStamp] DATETIMEOFFSET (7) NULL
+);
+
+
+USE [SpiritDB]
+GO
+
+/****** Object: Table [dbo].[QuoteMessagesToBeAdded] Script Date: 1/17/2018 10:53:52 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[QuoteMessagesToBeAdded] (
+    [Id]                INT                IDENTITY (1, 1) NOT NULL,
+    [Author]            NVARCHAR (250)     NULL,
+    [Content]           NVARCHAR (MAX)     NULL,
+    [ChannelID]         NVARCHAR (250)     NULL,
+    [Channel]           NVARCHAR (250)     NULL,
+    [CreationTimeStamp] DATETIMEOFFSET (7) NULL
+);
+
+
+*/
